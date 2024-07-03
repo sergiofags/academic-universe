@@ -1,3 +1,4 @@
+import { Poppins } from "next/font/google"
 import type { Config } from "tailwindcss"
 
 const config = {
@@ -18,6 +19,10 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        'Poppins-Semibold': ['Poppins-Semibold', 'sans-serif'],
+        'Poppins-Regular': ['Poppins-Regular', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -57,6 +62,9 @@ const config = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      width: {
+        450: "450px",
       },
       keyframes: {
         "accordion-down": {
